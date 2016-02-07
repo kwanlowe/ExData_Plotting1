@@ -26,8 +26,8 @@ kll_subset <- subset(kll, Date=="2007-02-01" | Date=="2007-02-02")
 
 graphLegend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
 
-# using with(), plot the Sub_metering_1 data in grey
-with(kll_subset, plot(DateTime,Sub_metering_1, type="l", ylab = "Energy Sub Metering", col="grey"))
+# using with(), plot the Sub_metering_1 data in black
+with(kll_subset, plot(DateTime,Sub_metering_1, type="l", ylab = "Energy Sub Metering", col="black"))
 # using with(), plot the Sub_metering_2 data in red
 points(kll_subset$DateTime, kll_subset$Sub_metering_2, type="l", col="red")
 # using with(), plot the Sub_metering_3 data in red
